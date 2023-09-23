@@ -10,6 +10,8 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import linkedin from "./linkedin.png";
 import naukri from "./naukri.png";
+import instagram from "./instagram.png";
+
 
 
 import css from "./tech/css.png";
@@ -59,6 +61,7 @@ export {
   close,
   linkedin,
   naukri,
+  instagram,
   css,
   docker,
   figma,

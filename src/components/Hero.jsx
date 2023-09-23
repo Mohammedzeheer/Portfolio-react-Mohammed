@@ -5,6 +5,8 @@ import { ComputersCanvas } from "./canvas";
 import { github } from "../assets";
 import { linkedin } from "../assets";
 import { naukri } from "../assets";
+import { instagram } from "../assets";
+
 
 const Hero = () => {
   return (
@@ -22,7 +24,8 @@ const Hero = () => {
             Hi, I&#39;m <span className='text-[#915EFF]'>Mohammed</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop user interfaces <br className='sm:block hidden' /> and web applications
+          Developing innovative,<br className='sm:block hidden' />user-friendly web applications
+            {/* I develop user interfaces <br className='sm:block hidden' /> and web applications */}
           </p>
 
  <div className='flex'>
@@ -56,6 +59,17 @@ const Hero = () => {
       src={naukri}
       alt='source code'
       // className='w-1/2 h-1/2 object-contain'
+    />
+  </div>
+
+  <div 
+    onClick={() => window.open('https://www.instagram.com/zaheer_.zak/', "_blank")}
+    className='ml-3 mt-3 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+  >
+    <img
+      src={instagram}
+      alt='source code'
+      className='w-1/2 h-1/2 object-contain'
     />
   </div>
  
