@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import hlogo from "./hlogo.png";
-import mlogo from './mlogo1.png'
+import mlogo from './mlogo2.png'
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
