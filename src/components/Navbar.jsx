@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { mlogo, menu, close } from "../assets";
+import { melogo, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -39,10 +38,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={mlogo} alt="logo" className="w-12 h-9 object-contain" />
+          <img src={melogo} alt="logo" className="w-12 h-12 object-contain rounded-full" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Mohammed &nbsp;
-            <span className="sm:block hidden"> |&nbsp; MERN Stack Developer</span>
+            <span className="sm:block hidden"> |&nbsp; Web Developer</span>
           </p>
         </Link>
 
@@ -66,7 +65,6 @@ const Navbar = () => {
             className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
-
           <div
             className={`${!toggle ? "hidden" : "flex"
               } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}

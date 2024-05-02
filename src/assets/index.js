@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import hlogo from "./hlogo.png";
 import mlogo from './mlogo2.png'
+import melogo from './me.favicon.png'
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -11,8 +12,6 @@ import close from "./close.svg";
 import linkedin from "./linkedin.png";
 import naukri from "./naukri.png";
 import instagram from "./instagram.png";
-
-
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -34,9 +33,9 @@ import threejs from "./tech/threejs.svg";
 import MySQL from "./tech/MySQL.png";
 import linkedin1 from "./tech/linkedin.png";
 
-
 import brototype from "./company/brototype.png"
 import Uvito from "./company/Uvito.png"
+import techrender from './company/techrender.png'
 
 import traction from "./traction.png";
 import textutils from "./textutils.png";
@@ -52,6 +51,7 @@ export {
   logo,
   hlogo,
   mlogo,
+  melogo,
   backend,
   creator,
   mobile,
@@ -88,7 +88,8 @@ export {
   netflixclone,
   turfWebsite,
   fashionWebsite,
-todoWebsite,
-urlWebsite,
-olxCloneWebsite,
+  todoWebsite,
+  urlWebsite,
+  olxCloneWebsite,
+  techrender
 };

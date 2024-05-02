@@ -28,9 +28,10 @@ import {
     threejs,
     turfWebsite,
     fashionWebsite,
-todoWebsite,
-urlWebsite,
-olxCloneWebsite
+    todoWebsite,
+    urlWebsite,
+    olxCloneWebsite,
+    techrender,
 } from "../assets";
 
 export const navLinks = [
@@ -140,18 +141,36 @@ const experiences = [
     //         "Actively participating in code reviews and embracing feedback from experienced developers to enhance my coding proficiency.",
     //     ],
     // },
-
+    {
+        title: "Full stack Developer",
+        company_name: "Techrender.ai",
+        icon: techrender,
+        iconBg: "#E6DEDD",
+        date: "2024 - present",
+        points: [
+            "As a full stack developer, I utilize NestJS, Node.js, React, PostgreSQL, and JavaScript to craft efficient and dynamic web applications",
+        ],
+    },
+    {
+        title: "Mern stack Developer",
+        company_name: "Brototype",
+        icon: brototype,
+        iconBg: "#E6DEDD",
+        date: "2022 - 2023",
+        points: [
+            "As a full stack developer, I utilize NestJS, Node.js, React, PostgreSQL, and JavaScript to craft efficient and dynamic web applications",
+        ],
+    },
     {
         title: "Mern stack Developer",
         company_name: "UVITO Technology Mangalore",
         icon: Uvito,
         iconBg: "#E6DEDD",
-        date: "2019 - 2020",
+        date: "2020 - 2021",
         points: [
             "Developed gold billing application and Collaborated with team members to deliver high-quality solutions",
         ],
     },
-
 ];
 
 const testimonials = [
