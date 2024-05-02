@@ -12,7 +12,7 @@ import close from "./close.svg";
 import linkedin from "./linkedin.png";
 import naukri from "./naukri.png";
 import instagram from "./instagram.png";
-
+//tech
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -32,15 +32,14 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import MySQL from "./tech/MySQL.png";
 import linkedin1 from "./tech/linkedin.png";
-
+//company
 import brototype from "./company/brototype.png"
 import Uvito from "./company/Uvito.png"
 import techrender from './company/techrender.png'
-
+//project
 import traction from "./traction.png";
 import textutils from "./textutils.png";
 import netflixclone from "./netflixclone.png";
-
 import turfWebsite from "./turfWebsite.png";
 import fashionWebsite from "./fashionWebsite.png";
 import urlWebsite from "./urlWebsite.png";
