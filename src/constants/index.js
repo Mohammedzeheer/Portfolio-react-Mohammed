@@ -32,6 +32,7 @@ import {
     urlWebsite,
     olxCloneWebsite,
     techrender,
+    nest
 } from "../assets";
 
 export const navLinks = [
@@ -73,10 +74,6 @@ const technologies = [
         name: "JavaScript",
         icon: javascript,
     },
-    // {
-    //     name: "Java",
-    //     icon: java,
-    // },
     {
         name: "TypeScript",
         icon: typescript,
@@ -84,6 +81,10 @@ const technologies = [
     {
         name: "React JS",
         icon: reactjs,
+    },
+     {
+        name: "Nest JS",
+        icon: nest,
     },
     {
         name: "Redux Toolkit",
@@ -135,7 +136,7 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "2024 - present",
         points: [
-            "As a full stack developer, I utilize NestJS, Node.js, React, PostgreSQL, and JavaScript to craft efficient and dynamic web applications",
+            "As a full stack developer, I utilize NestJS, Node.js, React, PostgreSQL, and JavaScript to craft efficient and dynamic web applications. I collaborate with team members to brainstorm ideas and tackle technical challenges, ensuring high-quality solutions are delivered efficiently.",
         ],
     },
     {
@@ -145,12 +146,12 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "2022 - 2023",
         points: [
-            "As a Mern stack developer, I utilize Node.js, React, Express,MongoDB and JavaScript to craft efficient and dynamic web applications",
+            "As a Mern stack developer, I use Node.js, React, Express, MongoDB, and JavaScript to create efficient and dynamic web apps.",
         ],
     },
     {
         title: "Mern stack Developer",
-        company_name: "UVITO Technology Mangalore",
+        company_name: "UVITO Technology",
         icon: Uvito,
         iconBg: "#E6DEDD",
         date: "2020 - 2021",

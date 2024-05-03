@@ -32,6 +32,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import MySQL from "./tech/MySQL.png";
 import linkedin1 from "./tech/linkedin.png";
+import nest from './tech/nest.png'
 //company
 import brototype from "./company/brototype.png"
 import Uvito from "./company/Uvito.png"
@@ -90,5 +91,6 @@ export {
   todoWebsite,
   urlWebsite,
   olxCloneWebsite,
-  techrender
+  techrender,
+  nest
 };
