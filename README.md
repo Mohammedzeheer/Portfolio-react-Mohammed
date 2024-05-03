@@ -40,7 +40,7 @@ This repository houses an well-designed and functional Developer Portfolio Websi
 <!-- Folder Structure -->
 ### :bangbang: Folder Structure
 
-Here is the folder structure of 3D-Portfolio.
+Here is the folder structure of Mohammed-Portfolio.
 ```bash
 Threejs_3D_Portfolio/
 |- public/
