@@ -28,9 +28,11 @@ import {
     threejs,
     turfWebsite,
     fashionWebsite,
-todoWebsite,
-urlWebsite,
-olxCloneWebsite
+    todoWebsite,
+    urlWebsite,
+    olxCloneWebsite,
+    techrender,
+    nest
 } from "../assets";
 
 export const navLinks = [
@@ -72,17 +74,17 @@ const technologies = [
         name: "JavaScript",
         icon: javascript,
     },
-    // {
-    //     name: "Java",
-    //     icon: java,
-    // },
-    // {
-    //     name: "TypeScript",
-    //     icon: typescript,
-    // },
+    {
+        name: "TypeScript",
+        icon: typescript,
+    },
     {
         name: "React JS",
         icon: reactjs,
+    },
+     {
+        name: "Nest JS",
+        icon: nest,
     },
     {
         name: "Redux Toolkit",
@@ -92,10 +94,10 @@ const technologies = [
         name: "Tailwind CSS",
         icon: tailwind,
     },
-    // {
-    //     name: "Bootstrap",
-    //     icon: bootstrap,
-    // },
+    {
+        name: "Bootstrap",
+        icon: bootstrap,
+    },
     {
         name: "Node JS",
         icon: nodejs,
@@ -112,10 +114,10 @@ const technologies = [
         name: "Firebase",
         icon: firebase,
     },
-    // {
-    //     name: "Three JS",
-    //     icon: threejs,
-    // },
+    {
+        name: "Docker",
+        icon: docker,
+    },
     {
         name: "git",
         icon: git,
@@ -127,31 +129,36 @@ const technologies = [
 ];
 
 const experiences = [
-    // {
-    //     title: "Mern stack Developer (Intern)",
-    //     company_name: "Brototype",
-    //     icon: brototype,
-    //     iconBg: "#E6DEDD",
-    //     date: "Jan 2023 - Present",
-    //     points: [
-    //         "Learning and gaining hands-on experience in web development using React.js and other related technologies during my bootcamp at Brototype.",
-    //         "Engaging in collaborative projects with fellow bootcamp participants, including designers and mentors, to build web applications and hone my skills.",
-    //         "Exploring responsive design principles and practicing cross-browser compatibility to create user-friendly web experiences.",
-    //         "Actively participating in code reviews and embracing feedback from experienced developers to enhance my coding proficiency.",
-    //     ],
-    // },
-
+    {
+        title: "Full stack Developer",
+        company_name: "Techrender.ai",
+        icon: techrender,
+        iconBg: "#E6DEDD",
+        date: "2024 - present",
+        points: [
+            "As a full stack developer, I utilize NestJS, Node.js, React, PostgreSQL, and JavaScript to craft efficient and dynamic web applications. I collaborate with team members to brainstorm ideas and tackle technical challenges, ensuring high-quality solutions are delivered efficiently.",
+        ],
+    },
     {
         title: "Mern stack Developer",
-        company_name: "UVITO Technology Mangalore",
+        company_name: "Brototype",
+        icon: brototype,
+        iconBg: "#E6DEDD",
+        date: "2022 - 2023",
+        points: [
+            "As a Mern stack developer, I use Node.js, React, Express, MongoDB, and JavaScript to create efficient and dynamic web apps.",
+        ],
+    },
+    {
+        title: "Mern stack Developer",
+        company_name: "UVITO Technology",
         icon: Uvito,
         iconBg: "#E6DEDD",
-        date: "2019 - 2020",
+        date: "2020 - 2021",
         points: [
             "Developed gold billing application and Collaborated with team members to deliver high-quality solutions",
         ],
     },
-
 ];
 
 const testimonials = [
