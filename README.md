@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 <div align="center"
-  <h1>Three.js 3D Portfolio</h1>
+  <h1>Mohammed Portfolio</h1>
   <p>
-    Three.js 3D Portfolio is a modern UI/UX and functional Developer Portfolio Web built with React & Three.js
+    Mohammed Portfolio is a modern UI/UX and functional Developer Portfolio Web built with React & Three.js
   </p>
 <!-- Table of Contents -->
 <details>
@@ -42,7 +42,7 @@ This repository houses an well-designed and functional Developer Portfolio Websi
 
 Here is the folder structure of Mohammed-Portfolio.
 ```bash
-Threejs_3D_Portfolio/
+Portfolio/
 |- public/
 |- src/
   |-- assets/
@@ -76,22 +76,15 @@ Threejs_3D_Portfolio/
 #### Step 1:
 Download or clone this repo by using the link below:
 
-```bash
- https://github.com/HensalDeon/react_portfolio
-```
-
 #### Step 2:
 
-3D-Portfolio using NPM (Node Package Manager), therefore, make sure that Node.js is installed by execute the following command in console:
-
+Portfolio using NPM (Node Package Manager), therefore, make sure that Node.js is installed by execute the following command in console:
 ```bash
   node -v
 ```
-
 #### Step 3:
 
 At the main folder execute the following command in console to get the required dependencies:
-
 ```bash
   npm install --legacy-peer-deps
 ```
@@ -130,7 +123,6 @@ At the main folder execute the following command in console to run the developme
 ```bash
   npm run dev
 ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
@@ -147,21 +139,6 @@ Don't forget to give the project a star! Thanks again!
 <!-- Contact -->
 ## :handshake: Contact
 
-Hensal Deon - [hensal deon](https://www.linkedin.com/in/hensal-deon-472883227/)
-
-Project Link: [https://github.com/ladunjexa/Threejs_3D_Portfolio](https://github.com/HensalDeon/react_portfolio)](https://github.com/HensalDeon/react_portfolio)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- Acknowledgments -->
-## :gem: Acknowledgements
-
-This section used to mention useful resources and libraries that used in 3D Portfolio
-
- - [Email JS](https://www.emailjs.com/)
- - [Framer Motion](https://www.framer.com/motion/)
- - [React Tilt](https://www.npmjs.com/package/react-tilt)
- - [React Vertical Timeline Component](https://www.npmjs.com/package/react-vertical-timeline-component)
- - #JSMastery
+Mohammed - [Mohammed](https://www.linkedin.com/in/mohammedzeheer/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
