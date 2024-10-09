@@ -32,7 +32,8 @@ import {
     urlWebsite,
     olxCloneWebsite,
     techrender,
-    nest
+    nest,
+    mountnoor
 } from "../assets";
 
 export const navLinks = [
@@ -213,6 +214,28 @@ const projects = [
         source_code_link: "https://github.com/Mohammedzeheer/turffrontend.git",
     },
     {
+        name: "Mountnoor",
+        description:
+            "The Mountnoor Posoat Institute, known as the Village of Knowledge, offers a dynamic platform built using Next.js and Tailwind CSS, leveraging MongoDB for a seamless experience. This project focuses on providing an engaging interface for students and visitors, allowing students to view their festival results effortlessly.",
+        tags: [
+            {
+                name: "Next.Js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "MongoDb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: mountnoor,
+        live_demo_link: "https://mountnoor.vercel.app/",
+        source_code_link: "https://github.com/Mohammedzeheer/mountnoor.git",
+    },
+    {
         name: "Aone Fashion",
         description:
             "Designed a chic fashion e-commerce app for effortless shopping. Built with Node and Handlebars, it ensures smooth navigation, secure payments, and intelligent search. It adapts beautifully to any device. Features include a streamlined booking process and a user-friendly cart for convenient shopping Explore it.",
@@ -245,7 +268,7 @@ const projects = [
     {
         name: "Url Shortner",
         description:
-            "URL Shortener! It's made with React and lets you quickly turn long web addresses into easy-to-share links. You can sign in easily using your Google account for added convenience and security. The design is simple and works well on any device. Take a look at this project to see how I create smooth and enjoyable experiences for users",
+            "URL Shortener! It's made with React, tailwind, NodeJS, MongoDb and lets you quickly turn long web addresses into easy-to-share links. You can sign in easily using your Google account for added convenience and security. The design is simple and works well on any device.",
         tags: [
             
             {
@@ -270,48 +293,50 @@ const projects = [
         source_code_link: "https://github.com/Mohammedzeheer/UrlShortner-frontend.git",
     },
   
-    // {
-    //     name: "Netflix Clone",
-    //     description:
-    //         "A cutting-edge Netflix clone project, offering users a seamless streaming experience with a vast library of movies, TV shows, and original content, all complemented by personalized recommendations and user-friendly features for an immersive entertainment journey.",
-    //     tags: [
-    //         {
-    //             name: "react.js",
-    //             color: "blue-text-gradient",
-    //         },
-    //         {
-    //             name: "firebase",
-    //             color: "green-text-gradient",
-    //         },
-    //         {
-    //             name: "scss",
-    //             color: "pink-text-gradient",
-    //         },
-    //     ],
-    //     image: netflixclone,
-    //     source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
-    // },
-    // {
-    //     name: "Olx Clone",
-    //     description:
-    //         "A cutting-edge Netflix clone project, offering users a seamless streaming experience with a vast library of movies, TV shows, and original content, all complemented by personalized recommendations and user-friendly features for an immersive entertainment journey.",
-    //     tags: [
-    //         {
-    //             name: "react.js",
-    //             color: "blue-text-gradient",
-    //         },
-    //         {
-    //             name: "firebase",
-    //             color: "green-text-gradient",
-    //         },
-    //         {
-    //             name: "scss",
-    //             color: "pink-text-gradient",
-    //         },
-    //     ],
-    //     image: netflixclone,
-    //     source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
-    // },
+    {
+        name: "Netflix Clone",
+        description:
+            "A cutting-edge Netflix clone project, offering users a seamless streaming experience with a vast library of movies, TV shows, and original content, all complemented by personalized recommendations and user-friendly features for an immersive entertainment journey.",
+        tags: [
+            {
+                name: "react.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "firebase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "scss",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: netflixclone,
+        live_demo_link: "https://netflias.netlify.app/",
+        source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
+    },
+    {
+        name: "Olx Clone",
+        description:
+            "A streamlined OLX clone where users can log in, add products for sale, and browse listings effortlessly. Built with Firebase for secure user authentication and real-time data management, offering a smooth user experience. Deployed on Firebase for easy access and scalability.",
+        tags: [
+            {
+                name: "react.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "firebase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "scss",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: olxCloneWebsite,
+        live_demo_link: "https://fir-158f0.web.app/",
+        source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
+    },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
