@@ -46,6 +46,7 @@ import fashionWebsite from "./fashionWebsite.png";
 import urlWebsite from "./urlWebsite.png";
 import olxCloneWebsite from "./olxCloneWebsite.png";
 import todoWebsite from "./todoWebsite.png";
+import mountnoor from "./mountnoor.png";
 
 export {
   logo,
@@ -92,5 +93,6 @@ export {
   urlWebsite,
   olxCloneWebsite,
   techrender,
-  nest
+  nest,
+  mountnoor
 };
