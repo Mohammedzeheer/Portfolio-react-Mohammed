@@ -33,7 +33,8 @@ import {
     olxCloneWebsite,
     techrender,
     nest,
-    mountnoor
+    mountnoor,
+    codefact
 } from "../assets";
 
 export const navLinks = [
@@ -130,12 +131,22 @@ const technologies = [
 ];
 
 const experiences = [
+     {
+        title: "Full stack Developer",
+        company_name: "Codefact",
+        icon: codefact,
+        iconBg: "#E6DEDD",
+        date: "2025 Jan - present",
+        points: [
+            "At CodeFact, I’m working on developing scalable web applications using NextJS, Node.js, React, MongoDB, and JavaScript. I handle both backend API development and frontend features, collaborate with the team to solve technical challenges, and focus on delivering clean, efficient, and user-friendly solutions. I’m currently involved in projects like RentOut.com, including modules such as property listings, bookings, payments, and admin dashboards.",
+        ],
+    },
     {
         title: "Full stack Developer",
         company_name: "Techrender.ai",
         icon: techrender,
         iconBg: "#E6DEDD",
-        date: "2024 - present",
+        date: "2024 Feb - 2025 Jan",
         points: [
             "As a full stack developer, I utilize NestJS, Node.js, React, PostgreSQL, and JavaScript to craft efficient and dynamic web applications. I collaborate with team members to brainstorm ideas and tackle technical challenges, ensuring high-quality solutions are delivered efficiently.",
         ],
@@ -155,7 +166,7 @@ const experiences = [
         company_name: "UVITO Technology",
         icon: Uvito,
         iconBg: "#E6DEDD",
-        date: "2020 - 2021",
+        date: "2021",
         points: [
             "Developed gold billing application and Collaborated with team members to deliver high-quality solutions",
         ],

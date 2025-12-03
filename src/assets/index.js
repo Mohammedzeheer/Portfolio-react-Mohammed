@@ -37,6 +37,7 @@ import nest from './tech/nest.png'
 import brototype from "./company/brototype.png"
 import Uvito from "./company/Uvito.png"
 import techrender from './company/techrender.png'
+import codefact from './company/codefacts.png'
 //project
 import traction from "./traction.png";
 import textutils from "./textutils.png";
@@ -94,5 +95,6 @@ export {
   olxCloneWebsite,
   techrender,
   nest,
-  mountnoor
+  mountnoor,
+  codefact
 };
