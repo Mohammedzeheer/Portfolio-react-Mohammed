@@ -48,6 +48,7 @@ import urlWebsite from "./urlWebsite.png";
 import olxCloneWebsite from "./olxCloneWebsite.png";
 import todoWebsite from "./todoWebsite.png";
 import mountnoor from "./mountnoor.png";
+import fest from './fest.png';
 
 export {
   logo,
@@ -96,5 +97,6 @@ export {
   techrender,
   nest,
   mountnoor,
-  codefact
+  codefact,
+  fest
 };

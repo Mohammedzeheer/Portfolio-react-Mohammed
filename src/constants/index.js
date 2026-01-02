@@ -34,7 +34,8 @@ import {
     techrender,
     nest,
     mountnoor,
-    codefact
+    codefact,
+    fest
 } from "../assets";
 
 export const navLinks = [
@@ -198,6 +199,48 @@ const testimonials = [
 ];
 
 const projects = [
+    {
+        name: "All-in-One Digital Solution for Event Management & Promotion",
+        description:
+            "A powerful web application designed to simplify event promotion and management. This platform brings together event details, live updates, results, and media into one seamless experience for organizers and participants.",     
+            tags: [
+            {
+                name: "View complete event details in one place",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Live team points & score tracking",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Auto-generated student result posters",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Instant certificate generation",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Advertisement & event poster",
+                color: "green-text-gradient",
+            },
+            {
+                name: "YouTube live stream integration",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Social media updates showcase",
+                color: "green-text-gradient",
+            },
+            {
+                name: " Download results, images & certificates easily",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: fest,
+        live_demo_link: "https:mountune.mountnoor.in/",
+        source_code_link: "https://github.com/Mohammedzeheer/",
+    },
     {
         name: "A One Turf",
         description:
