@@ -33,7 +33,9 @@ import {
     olxCloneWebsite,
     techrender,
     nest,
-    mountnoor
+    mountnoor,
+    codefact,
+    fest
 } from "../assets";
 
 export const navLinks = [
@@ -130,12 +132,22 @@ const technologies = [
 ];
 
 const experiences = [
+     {
+        title: "Full stack Developer",
+        company_name: "Codefact",
+        icon: codefact,
+        iconBg: "#E6DEDD",
+        date: "2025 Jan - present",
+        points: [
+            "At CodeFact, I’m working on developing scalable web applications using NextJS, Node.js, React, MongoDB, and JavaScript. I handle both backend API development and frontend features, collaborate with the team to solve technical challenges, and focus on delivering clean, efficient, and user-friendly solutions. I’m currently involved in projects like RentOut.com, including modules such as property listings, bookings, payments, and admin dashboards.",
+        ],
+    },
     {
         title: "Full stack Developer",
         company_name: "Techrender.ai",
         icon: techrender,
         iconBg: "#E6DEDD",
-        date: "2024 - present",
+        date: "2024 Feb - 2025 Jan",
         points: [
             "As a full stack developer, I utilize NestJS, Node.js, React, PostgreSQL, and JavaScript to craft efficient and dynamic web applications. I collaborate with team members to brainstorm ideas and tackle technical challenges, ensuring high-quality solutions are delivered efficiently.",
         ],
@@ -155,7 +167,7 @@ const experiences = [
         company_name: "UVITO Technology",
         icon: Uvito,
         iconBg: "#E6DEDD",
-        date: "2020 - 2021",
+        date: "2021",
         points: [
             "Developed gold billing application and Collaborated with team members to deliver high-quality solutions",
         ],
@@ -187,6 +199,48 @@ const testimonials = [
 ];
 
 const projects = [
+    {
+        name: "All-in-One Digital Solution for Event Management & Promotion",
+        description:
+            "A powerful web application designed to simplify event promotion and management. This platform brings together event details, live updates, results, and media into one seamless experience for organizers and participants.",     
+            tags: [
+            {
+                name: "View complete event details in one place",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Live team points & score tracking",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Auto-generated student result posters",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Instant certificate generation",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Advertisement & event poster",
+                color: "green-text-gradient",
+            },
+            {
+                name: "YouTube live stream integration",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Social media updates showcase",
+                color: "green-text-gradient",
+            },
+            {
+                name: " Download results, images & certificates easily",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: fest,
+        live_demo_link: "https:mountune.mountnoor.in/",
+        source_code_link: "https://github.com/Mohammedzeheer/",
+    },
     {
         name: "A One Turf",
         description:
