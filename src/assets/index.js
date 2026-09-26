@@ -49,6 +49,7 @@ import olxCloneWebsite from "./olxCloneWebsite.webp";
 import todoWebsite from "./todoWebsite.webp";
 import mountnoor from "./mountnoor.webp";
 import fest from './fest.webp';
+import profile from './profile.webp';
 
 export {
   logo,
@@ -98,5 +99,6 @@ export {
   nest,
   mountnoor,
   codefact,
-  fest
+  fest,
+  profile
 };

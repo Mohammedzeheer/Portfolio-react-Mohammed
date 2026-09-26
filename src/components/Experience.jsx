@@ -18,10 +18,14 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{
         background: "#1d1836",
         color: "#fff",
+        border: "1px solid rgba(145, 94, 255, 0.25)",
+        borderRadius: "16px",
+        boxShadow: "0 20px 60px -20px rgba(145, 94, 255, 0.35)",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid #2d2552" }}
+      dateClassName="experience-date"
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{ background: experience.iconBg, boxShadow: '0 0 0 4px #915EFF, 0 0 20px rgba(145, 94, 255, 0.5)' }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
           <img
@@ -33,9 +37,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-white text-[20px] sm:text-[24px] font-bold'>{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-[#c084fc] text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -46,7 +50,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className='text-white-100 text-[14px] pl-1 leading-relaxed'
           >
             {point}
           </li>
@@ -80,8 +84,8 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
+      <div className='mt-14 flex flex-col'>
+        <VerticalTimeline lineColor='rgba(145, 94, 255, 0.35)'>
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}

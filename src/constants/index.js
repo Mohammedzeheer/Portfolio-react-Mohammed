@@ -35,7 +35,11 @@ import {
     nest,
     mountnoor,
     codefact,
-    fest
+    fest,
+    github,
+    linkedin,
+    naukri,
+    instagram,
 } from "../assets";
 
 export const navLinks = [
@@ -45,7 +49,15 @@ export const navLinks = [
     },
     {
         id: "work",
-        title: "Work",
+        title: "Experience",
+    },
+    {
+        id: "skills",
+        title: "Skills",
+    },
+    {
+        id: "projects",
+        title: "Projects",
     },
     {
         id: "contact",
@@ -53,14 +65,54 @@ export const navLinks = [
     },
 ];
 
+export const socialLinks = [
+    {
+        name: "GitHub",
+        icon: github,
+        url: "https://github.com/Mohammedzeheer",
+    },
+    {
+        name: "LinkedIn",
+        icon: linkedin,
+        url: "https://linkedin.com/in/mohammedzeheer/",
+    },
+    {
+        name: "Naukri",
+        icon: naukri,
+        url: "https://www.naukri.com/mnjuser/profile?id=&altresid/",
+    },
+    {
+        name: "Instagram",
+        icon: instagram,
+        url: "https://www.instagram.com/zaheer_.zak/",
+    },
+];
+
+export const contactInfo = {
+    email: "zeheerzak@gmail.com",
+    phone: "+91 9995088067",
+};
+
 const services = [
     {
         title: "Frontend Developer",
         icon: web,
+        description: "Pixel-perfect, fast interfaces with React, Next.js and Tailwind CSS.",
     },
     {
         title: "Backend Developer",
         icon: backend,
+        description: "Secure, scalable REST APIs with Node.js, Express and NestJS.",
+    },
+    {
+        title: "Full Stack Solutions",
+        icon: creator,
+        description: "End-to-end products — database, API, dashboard and deployment.",
+    },
+    {
+        title: "Responsive Design",
+        icon: mobile,
+        description: "Layouts that look great on every screen, from phone to desktop.",
     },
 ];
 
@@ -122,11 +174,11 @@ const technologies = [
         icon: docker,
     },
     {
-        name: "git",
+        name: "Git",
         icon: git,
     },
     {
-        name: "figma",
+        name: "Figma",
         icon: figma,
     },
 ];

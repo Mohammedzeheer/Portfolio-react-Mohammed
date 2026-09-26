@@ -7,23 +7,21 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-export const ServiceCard = ({ index, title, icon }) => (
-    <Tilt className="xs:w-[250px] w-full">
+export const ServiceCard = ({ index, title, icon, description }) => (
+    <Tilt className="w-full h-full" options={{ max: 20, scale: 1, speed: 450 }}>
         <motion.div
-            variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-            className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+            variants={fadeIn("up", "spring", index * 0.2, 0.75)}
+            className="w-full h-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
         >
-            <div
-                options={{
-                    max: 45,
-                    scale: 1,
-                    speed: 450,
-                }}
-                className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-            >
-                <img src={icon} alt="web-development" className="w-16 h-16 object-contain" />
+            <div className="bg-tertiary rounded-[20px] h-full py-8 px-6 min-h-[260px] flex items-center flex-col text-center gap-4">
+                <div className="w-20 h-20 rounded-2xl bg-white/5 flex items-center justify-center">
+                    <img src={icon} alt="" className="w-14 h-14 object-contain" />
+                </div>
 
-                <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+                <h3 className="text-white text-[20px] font-bold">{title}</h3>
+                {description && (
+                    <p className="text-secondary text-[14px] leading-relaxed">{description}</p>
+                )}
             </div>
         </motion.div>
     </Tilt>
@@ -33,6 +31,7 @@ ServiceCard.propTypes = {
     index: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
+    description: PropTypes.string,
 };
 
 const About = () => {
@@ -45,22 +44,20 @@ const About = () => {
 
             <motion.p
                 variants={fadeIn("", "", 0.1, 1)}
-                className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
+                className="mt-4 text-secondary text-[16px] sm:text-[17px] max-w-4xl leading-[30px]"
             >
-                {/* I&#39;m a skilled software developer with experience in Javascript and expertise in frameworks like React,
-                Node.js and Express.js . I&#39;m a quick learner and collaborate closely
-                with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.
-                Let&#39;s work together to bring your ideas to life! */}
-
-         Experienced software developer proficient in JavaScript, specialized in React, Node.js, and Express.js. 
-         Proven track record in crafting efficient, scalable, and user-friendly solutions.
-         Quick learner and adept at client collaboration. Let's bring your ideas to life!
-
-
-
+                I&apos;m a full stack developer who loves turning ideas into fast, reliable
+                web products. I work across the stack with{" "}
+                <span className="text-white font-medium">
+                    React, Next.js, Node.js, NestJS, MongoDB and PostgreSQL
+                </span>
+                , building everything from event platforms to booking and payment systems.
+                I&apos;m a quick learner who enjoys collaborating closely with clients and teams
+                to ship clean, scalable and user-friendly solutions. Let&apos;s bring your ideas
+                to life!
             </motion.p>
 
-            <div className="mt-20 flex flex-wrap gap-10 justify-center">
+            <div className="mt-14 grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6">
                 {services.map((service, index) => (
                     <ServiceCard key={service.title} index={index} {...service} />
                 ))}

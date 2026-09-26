@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,6 +10,74 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: #050816;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #915eff;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d2552;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #915eff;
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/[0.03] border border-white/10 backdrop-blur-md;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#915eff] via-[#c084fc] to-[#00cea8] bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-[#915eff] px-6 py-3 font-semibold text-white shadow-lg shadow-[#915eff]/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#7c3aed] hover:shadow-[#915eff]/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c084fc] disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-[#915eff] hover:bg-[#915eff]/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c084fc];
+  }
+
+  .social-icon {
+    @apply flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-1 hover:border-[#915eff] hover:bg-[#915eff]/20;
+  }
+
+  .input-field {
+    @apply rounded-lg border border-white/10 bg-tertiary px-5 py-4 font-medium text-white outline-none transition-colors placeholder:text-secondary/70 focus:border-[#915eff] focus:ring-1 focus:ring-[#915eff];
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .hash-span {
@@ -201,4 +268,10 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+/* experience timeline */
+.experience-date {
+  color: #aaa6c3;
+  font-weight: 600;
+  opacity: 1 !important;
 }

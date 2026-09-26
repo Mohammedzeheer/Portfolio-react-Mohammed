@@ -1,7 +1,7 @@
 import { Suspense, useRef } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { useInView } from "framer-motion";
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, Footer, ScrollToTop } from "./components";
 function App() {
     const contactRef = useRef();
     // defer loading three.js until the contact section is close to the viewport
@@ -27,6 +27,8 @@ function App() {
                         </Suspense>
                     )}
                 </div>
+                <Footer />
+                <ScrollToTop />
             </div>
         </BrowserRouter>
     );
