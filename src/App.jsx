@@ -1,6 +1,12 @@
+import { Suspense, useRef } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { useInView } from "framer-motion";
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, Footer, ScrollToTop } from "./components";
 function App() {
+    const contactRef = useRef();
+    // defer loading three.js until the contact section is close to the viewport
+    const contactInView = useInView(contactRef, { once: true, margin: "300px" });
+
     return (
         <BrowserRouter>
             <div className="relative z-0 bg-primary">
@@ -13,10 +19,16 @@ function App() {
                 <Tech />
                 <Works />
                 {/* <Feedbacks /> */}
-                <div className="relative z-0">
+                <div ref={contactRef} className="relative z-0">
                     <Contact />
-                    <StarsCanvas />
+                    {contactInView && (
+                        <Suspense fallback={null}>
+                            <StarsCanvas />
+                        </Suspense>
+                    )}
                 </div>
+                <Footer />
+                <ScrollToTop />
             </div>
         </BrowserRouter>
     );

@@ -1,17 +1,17 @@
 import logo from "./logo.svg";
 import hlogo from "./hlogo.png";
 import mlogo from './mlogo2.png'
-import melogo from './me.favicon.png'
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
+import melogo from './me.favicon.webp'
+import backend from "./backend.webp";
+import creator from "./creator.webp";
+import mobile from "./mobile.webp";
+import web from "./web.webp";
+import github from "./github.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import linkedin from "./linkedin.png";
-import naukri from "./naukri.png";
-import instagram from "./instagram.png";
+import linkedin from "./linkedin.webp";
+import naukri from "./naukri.webp";
+import instagram from "./instagram.webp";
 //tech
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -39,16 +39,17 @@ import Uvito from "./company/Uvito.png"
 import techrender from './company/techrender.png'
 import codefact from './company/codefacts.png'
 //project
-import traction from "./traction.png";
-import textutils from "./textutils.png";
-import netflixclone from "./netflixclone.png";
-import turfWebsite from "./turfWebsite.png";
-import fashionWebsite from "./fashionWebsite.png";
-import urlWebsite from "./urlWebsite.png";
-import olxCloneWebsite from "./olxCloneWebsite.png";
-import todoWebsite from "./todoWebsite.png";
-import mountnoor from "./mountnoor.png";
-import fest from './fest.png';
+import traction from "./traction.webp";
+import textutils from "./textutils.webp";
+import netflixclone from "./netflixclone.webp";
+import turfWebsite from "./turfWebsite.webp";
+import fashionWebsite from "./fashionWebsite.webp";
+import urlWebsite from "./urlWebsite.webp";
+import olxCloneWebsite from "./olxCloneWebsite.webp";
+import todoWebsite from "./todoWebsite.webp";
+import mountnoor from "./mountnoor.webp";
+import fest from './fest.webp';
+import profile from './profile.webp';
 
 export {
   logo,
@@ -98,5 +99,6 @@ export {
   nest,
   mountnoor,
   codefact,
-  fest
+  fest,
+  profile
 };
