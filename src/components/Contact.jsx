@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { Suspense, useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +11,9 @@ import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
+  const earthRef = useRef();
+  // only start downloading the 3D globe when the section is about to be seen
+  const earthInView = useInView(earthRef, { once: true, margin: "200px" });
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -150,9 +153,14 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
+        ref={earthRef}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
         >
-        <EarthCanvas />
+        {earthInView && (
+          <Suspense fallback={null}>
+            <EarthCanvas />
+          </Suspense>
+        )}
       </motion.div>
     </div>
     <ToastContainer position="bottom-center" />

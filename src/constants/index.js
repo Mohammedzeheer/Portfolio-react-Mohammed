@@ -200,7 +200,7 @@ const testimonials = [
 
 const projects = [
     {
-        name: "All-in-One Digital Solution for Event Management & Promotion",
+        name: "FestSpace",
         description:
             "A powerful web application designed to simplify event promotion and management. This platform brings together event details, live updates, results, and media into one seamless experience for organizers and participants.",     
             tags: [
@@ -238,7 +238,7 @@ const projects = [
             },
         ],
         image: fest,
-        live_demo_link: "https:mountune.mountnoor.in/",
+        live_demo_link: "https://mountune.mountnoor.in/",
         source_code_link: "https://github.com/Mohammedzeheer/",
     },
     {
@@ -264,7 +264,7 @@ const projects = [
             },
         ],
         image: turfWebsite,
-        live_demo_link: "https:aoneturf.netlify.app/",
+        live_demo_link: "https://aoneturf.netlify.app/",
         source_code_link: "https://github.com/Mohammedzeheer/turffrontend.git",
     },
     {
@@ -319,33 +319,33 @@ const projects = [
         source_code_link: "https://github.com/Mohammedzeheer/a1fashion.git",
     },
 
-    {
-        name: "Url Shortner",
-        description:
-            "URL Shortener! It's made with React, tailwind, NodeJS, MongoDb and lets you quickly turn long web addresses into easy-to-share links. You can sign in easily using your Google account for added convenience and security. The design is simple and works well on any device.",
-        tags: [
+    // {
+    //     name: "Url Shortner",
+    //     description:
+    //         "URL Shortener! It's made with React, tailwind, NodeJS, MongoDb and lets you quickly turn long web addresses into easy-to-share links. You can sign in easily using your Google account for added convenience and security. The design is simple and works well on any device.",
+    //     tags: [
             
-            {
-                name: "Node.Js",
-                color: "green-text-gradient",
-            },
-            {
-                name: "React.js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "MongoDb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: urlWebsite,
-        live_demo_link: "https://url-shortner-seven-virid.vercel.app/",
-        source_code_link: "https://github.com/Mohammedzeheer/UrlShortner-frontend.git",
-    },
+    //         {
+    //             name: "Node.Js",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "React.js",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "MongoDb",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "Tailwind",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: urlWebsite,
+    //     live_demo_link: "https://url-shortner-seven-virid.vercel.app/",
+    //     source_code_link: "https://github.com/Mohammedzeheer/UrlShortner-frontend.git",
+    // },
   
     {
         name: "Netflix Clone",
@@ -369,28 +369,28 @@ const projects = [
         live_demo_link: "https://netflias.netlify.app/",
         source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
     },
-    {
-        name: "Olx Clone",
-        description:
-            "A streamlined OLX clone where users can log in, add products for sale, and browse listings effortlessly. Built with Firebase for secure user authentication and real-time data management, offering a smooth user experience. Deployed on Firebase for easy access and scalability.",
-        tags: [
-            {
-                name: "react.js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "firebase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: olxCloneWebsite,
-        live_demo_link: "https://fir-158f0.web.app/",
-        source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
-    },
+    // {
+    //     name: "Olx Clone",
+    //     description:
+    //         "A streamlined OLX clone where users can log in, add products for sale, and browse listings effortlessly. Built with Firebase for secure user authentication and real-time data management, offering a smooth user experience. Deployed on Firebase for easy access and scalability.",
+    //     tags: [
+    //         {
+    //             name: "react.js",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "firebase",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "scss",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: olxCloneWebsite,
+    //     live_demo_link: "https://fir-158f0.web.app/",
+    //     source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
+    // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
