@@ -33,9 +33,34 @@ import {
     olxCloneWebsite,
     techrender,
     nest,
-    mountnoor,
+    mountnoor1,
+    mountnoor2,
+    mountnoor3,
+    mountnoor4,
+    mountnoor5,
     codefact,
-    fest,
+    festspace1,
+    festspace2,
+    festspace3,
+    feeflow1,
+    feeflow2,
+    feeflow3,
+    feeflow4,
+    feeflow5,
+    feeflow6,
+    karate1,
+    karate2,
+    karate3,
+    karate4,
+    karate5,
+    karate6,
+    registration1,
+    registration2,
+    registration3,
+    registration4,
+    registration5,
+    registration6,
+    registration7,
     github,
     linkedin,
     naukri,
@@ -252,77 +277,179 @@ const testimonials = [
 
 const projects = [
     {
-        name: "FestSpace",
+        name: "Fest Space",
         description:
-            "A powerful web application designed to simplify event promotion and management. This platform brings together event details, live updates, results, and media into one seamless experience for organizers and participants.",     
-            tags: [
+            "Fest management software for Sahityotsavs, madrasa fests, and school and college arts fests. One app runs the whole fest: registration with chest numbers, clash-free stage schedules, blind judging on phones, live team points, posters and certificates, and a public results website. 30+ fests hosted.",
+        tags: [
             {
-                name: "View complete event details in one place",
+                name: "Chest numbers & QR badges",
                 color: "green-text-gradient",
             },
             {
-                name: "Live team points & score tracking",
+                name: "Clash-free stage scheduling",
                 color: "blue-text-gradient",
             },
             {
-                name: "Auto-generated student result posters",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Instant certificate generation",
+                name: "Blind judging on phones",
                 color: "pink-text-gradient",
             },
             {
-                name: "Advertisement & event poster",
+                name: "Live team points",
                 color: "green-text-gradient",
             },
             {
-                name: "YouTube live stream integration",
+                name: "Auto posters & certificates",
                 color: "blue-text-gradient",
             },
             {
-                name: "Social media updates showcase",
+                name: "6 coordinator dashboards",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Green Room call queue",
                 color: "green-text-gradient",
             },
             {
-                name: " Download results, images & certificates easily",
-                color: "pink-text-gradient",
+                name: "Public results website",
+                color: "blue-text-gradient",
             },
         ],
-        image: fest,
-        live_demo_link: "https://mountune.mountnoor.in/",
+        image: festspace1,
+        images: [festspace1, festspace2, festspace3],
+        live_demo_link: "https://festspace1.netlify.app/",
         source_code_link: "https://github.com/Mohammedzeheer/",
     },
     {
-        name: "A One Turf",
+        name: "FeeFlow",
         description:
-            "The Turf Booking Web App makes reserving football fields easy. You can sign up, pick a field like location and facilities, choose a date and time, and pay securely online. You can also leave reviews. It's mobile-friendly too! This web app saves time.It's a handy tool for football lovers and field owners to enjoy and manage their spaces better!",
+            "Fees, receipts and reminders for tuition centres, karate classes and schools, run from a phone. Staff collect cash or UPI and the receipt is ready to send on WhatsApp before the parent leaves the counter. Parents log in with a Student ID and PIN to see what's pending, pay by UPI and download every receipt.",
         tags: [
             {
-                name: "Node.Js",
-                color: "green-text-gradient",
-            },
-            {
-                name: "React",
+                name: "Next.js",
                 color: "blue-text-gradient",
             },
             {
-                name: "MongoDb",
+                name: "Tailwind CSS",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "MongoDB",
                 color: "green-text-gradient",
             },
             {
-                name: "Tailwind",
+                name: "Node.js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "WhatsApp Cloud API",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "UPI deep links",
                 color: "pink-text-gradient",
             },
         ],
-        image: turfWebsite,
-        live_demo_link: "https://aoneturf.netlify.app/",
-        source_code_link: "https://github.com/Mohammedzeheer/turffrontend.git",
+        image: feeflow1,
+        images: [feeflow1, feeflow2, feeflow3, feeflow4, feeflow5, feeflow6],
+        live_demo_link: "https://fee-flow-ashan.vercel.app/how-it-works",
+        source_code_link: "https://github.com/Mohammedzeheer/",
     },
+    {
+        name: "Karate Championship",
+        description:
+            "A live karate championship app that replaces paper entry forms. Team managers register a whole team from a phone, with automatic chest numbers and eligibility checks across 124 Kata and Kumite categories by age, gender and weight. Officials mark attendance, weigh-in and results right at the mat, and team points and podiums update live for everyone.",
+        tags: [
+            {
+                name: "Next.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Node.js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "MongoDB",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Mobile-first",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: karate1,
+        images: [karate1, karate2, karate3, karate4, karate5, karate6],
+        live_demo_link: "https://karate-championship.vercel.app/",
+        source_code_link: "https://github.com/Mohammedzeheer/",
+    },
+    {
+        name: "Event Registration Platform",
+        description:
+            "One web app for every step of an event: registration, instant ID passes, check-in at the gate, live reports, role-based admin and per-session feedback. Each event gets its own mobile-first website in English and Malayalam. Built and shipped for real events, including the Muthaallim Summit in Kasaragod with 1,292 registrations.",
+        tags: [
+            {
+                name: "Registration & ID passes",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Check-in by ID",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Live reports",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Role-based admin",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Session feedback",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Event websites",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: registration1,
+        images: [registration1, registration2, registration3, registration4, registration5, registration6, registration7],
+        live_demo_link: "https://mu-summit-ssfkasaragod.vercel.app/",
+        source_code_link: "https://github.com/Mohammedzeheer/",
+    },
+    // {
+    //     name: "A One Turf",
+    //     description:
+    //         "The Turf Booking Web App makes reserving football fields easy. You can sign up, pick a field like location and facilities, choose a date and time, and pay securely online. You can also leave reviews. It's mobile-friendly too! This web app saves time.It's a handy tool for football lovers and field owners to enjoy and manage their spaces better!",
+    //     tags: [
+    //         {
+    //             name: "Node.Js",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "React",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "MongoDb",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "Tailwind",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: turfWebsite,
+    //     live_demo_link: "https://aoneturf.netlify.app/",
+    //     source_code_link: "https://github.com/Mohammedzeheer/turffrontend.git",
+    // },
     {
         name: "Mountnoor",
         description:
-            "The Mountnoor Posoat Institute, known as the Village of Knowledge, offers a dynamic platform built using Next.js and Tailwind CSS, leveraging MongoDB for a seamless experience. This project focuses on providing an engaging interface for students and visitors, allowing students to view their festival results effortlessly.",
+            "Website and admin panel for Mountnoor, the Village of Knowledge: an educational and spiritual centre in Posoat, Manjeshwar, Kasaragod. The public site covers news, events, a photo gallery, Caliber School and the Mountune arts fest. A private admin panel lets the committee run fund drives, income and expense, receipts and member roles. I designed and built both.",
         tags: [
             {
                 name: "Next.Js",
@@ -337,39 +464,40 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: mountnoor,
-        live_demo_link: "https://mountnoor.vercel.app/",
+        image: mountnoor1,
+        images: [mountnoor1, mountnoor2, mountnoor3, mountnoor4, mountnoor5],
+        live_demo_link: "https://mountnoor.in/",
         source_code_link: "https://github.com/Mohammedzeheer/mountnoor.git",
     },
-    {
-        name: "Aone Fashion",
-        description:
-            "Designed a chic fashion e-commerce app for effortless shopping. Built with Node and Handlebars, it ensures smooth navigation, secure payments, and intelligent search. It adapts beautifully to any device. Features include a streamlined booking process and a user-friendly cart for convenient shopping Explore it.",
+    // {
+    //     name: "Aone Fashion",
+    //     description:
+    //         "Designed a chic fashion e-commerce app for effortless shopping. Built with Node and Handlebars, it ensures smooth navigation, secure payments, and intelligent search. It adapts beautifully to any device. Features include a streamlined booking process and a user-friendly cart for convenient shopping Explore it.",
        
 
-            tags: [
-            {
-                name: "Node.Js",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Hbs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "MongoDb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "bootstrap",
-                color: "pink-text-gradient",
-            },
+    //         tags: [
+    //         {
+    //             name: "Node.Js",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "Hbs",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "MongoDb",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "bootstrap",
+    //             color: "pink-text-gradient",
+    //         },
             
-        ],
-        image: fashionWebsite,
-        live_demo_link: "https://a1fashion.online/",
-        source_code_link: "https://github.com/Mohammedzeheer/a1fashion.git",
-    },
+    //     ],
+    //     image: fashionWebsite,
+    //     live_demo_link: "https://a1fashion.online/",
+    //     source_code_link: "https://github.com/Mohammedzeheer/a1fashion.git",
+    // },
 
     // {
     //     name: "Url Shortner",
@@ -399,28 +527,28 @@ const projects = [
     //     source_code_link: "https://github.com/Mohammedzeheer/UrlShortner-frontend.git",
     // },
   
-    {
-        name: "Netflix Clone",
-        description:
-            "A cutting-edge Netflix clone project, offering users a seamless streaming experience with a vast library of movies, TV shows, and original content, all complemented by personalized recommendations and user-friendly features for an immersive entertainment journey.",
-        tags: [
-            {
-                name: "react.js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "firebase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: netflixclone,
-        live_demo_link: "https://netflias.netlify.app/",
-        source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
-    },
+    // {
+    //     name: "Netflix Clone",
+    //     description:
+    //         "A cutting-edge Netflix clone project, offering users a seamless streaming experience with a vast library of movies, TV shows, and original content, all complemented by personalized recommendations and user-friendly features for an immersive entertainment journey.",
+    //     tags: [
+    //         {
+    //             name: "react.js",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "firebase",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "scss",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: netflixclone,
+    //     live_demo_link: "https://netflias.netlify.app/",
+    //     source_code_link: "https://github.com/Mohammedzeheer/netflix.git",
+    // },
     // {
     //     name: "Olx Clone",
     //     description:

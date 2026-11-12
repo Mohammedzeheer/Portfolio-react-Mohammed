@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
@@ -8,6 +9,7 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const MAX_TAGS = 4;
+const SLIDE_INTERVAL_MS = 3500;
 
 const ProjectCard = ({
   index,
@@ -15,9 +17,22 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  images,
   source_code_link,
   live_demo_link,
 }) => {
+  const slides = images?.length ? images : [image];
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    if (slides.length < 2) return undefined;
+    const id = setInterval(
+      () => setActive((current) => (current + 1) % slides.length),
+      SLIDE_INTERVAL_MS
+    );
+    return () => clearInterval(id);
+  }, [slides.length]);
+
   const visibleTags = tags.slice(0, MAX_TAGS);
   const hiddenCount = tags.length - visibleTags.length;
 
@@ -30,17 +45,34 @@ const ProjectCard = ({
         href={live_demo_link}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative block w-full aspect-[16/10] overflow-hidden"
+        className="relative block w-full aspect-[4/5] overflow-hidden"
         aria-label={`Open ${name} live demo`}
       >
-        <img
-          src={image}
-          alt={name}
-          loading="lazy"
-          decoding="async"
-          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-tertiary via-transparent to-transparent opacity-80" />
+        {slides.map((src, i) => (
+          <img
+            key={src}
+            src={src}
+            alt={i === 0 ? name : ""}
+            loading="lazy"
+            decoding="async"
+            className={`absolute inset-0 w-full h-full object-cover object-top transition-[opacity,transform] duration-700 group-hover:scale-105 ${
+              i === active ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-t from-tertiary/70 to-transparent h-16 top-auto pointer-events-none" />
+        {slides.length > 1 && (
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5" aria-hidden="true">
+            {slides.map((src, i) => (
+              <span
+                key={src}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === active ? "w-5 bg-white" : "w-1.5 bg-white/50"
+                }`}
+              />
+            ))}
+          </div>
+        )}
       </a>
 
       <div className="flex-1 flex flex-col p-5 sm:p-6">
@@ -101,6 +133,7 @@ ProjectCard.propTypes = {
     })
   ).isRequired,
   image: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(PropTypes.string),
   source_code_link: PropTypes.string.isRequired,
   live_demo_link: PropTypes.string.isRequired,
 };

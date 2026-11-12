@@ -48,7 +48,34 @@ import urlWebsite from "./urlWebsite.webp";
 import olxCloneWebsite from "./olxCloneWebsite.webp";
 import todoWebsite from "./todoWebsite.webp";
 import mountnoor from "./mountnoor.webp";
+import mountnoor1 from './mountnoor1.webp';
+import mountnoor2 from './mountnoor2.webp';
+import mountnoor3 from './mountnoor3.webp';
+import mountnoor4 from './mountnoor4.webp';
+import mountnoor5 from './mountnoor5.webp';
 import fest from './fest.webp';
+import festspace1 from './festspace1.webp';
+import festspace2 from './festspace2.webp';
+import festspace3 from './festspace3.webp';
+import feeflow1 from './feeflow1.webp';
+import feeflow2 from './feeflow2.webp';
+import feeflow3 from './feeflow3.webp';
+import feeflow4 from './feeflow4.webp';
+import feeflow5 from './feeflow5.webp';
+import feeflow6 from './feeflow6.webp';
+import karate1 from './karate1.webp';
+import karate2 from './karate2.webp';
+import karate3 from './karate3.webp';
+import karate4 from './karate4.webp';
+import karate5 from './karate5.webp';
+import karate6 from './karate6.webp';
+import registration1 from './registration1.webp';
+import registration2 from './registration2.webp';
+import registration3 from './registration3.webp';
+import registration4 from './registration4.webp';
+import registration5 from './registration5.webp';
+import registration6 from './registration6.webp';
+import registration7 from './registration7.webp';
 import profile from './profile.webp';
 
 export {
@@ -98,7 +125,34 @@ export {
   techrender,
   nest,
   mountnoor,
+  mountnoor1,
+  mountnoor2,
+  mountnoor3,
+  mountnoor4,
+  mountnoor5,
   codefact,
   fest,
+  festspace1,
+  festspace2,
+  festspace3,
+  feeflow1,
+  feeflow2,
+  feeflow3,
+  feeflow4,
+  feeflow5,
+  feeflow6,
+  karate1,
+  karate2,
+  karate3,
+  karate4,
+  karate5,
+  karate6,
+  registration1,
+  registration2,
+  registration3,
+  registration4,
+  registration5,
+  registration6,
+  registration7,
   profile
 };
