@@ -150,8 +150,8 @@ const Works = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-3 text-secondary text-[16px] sm:text-[17px] max-w-3xl leading-[30px]"
       >
-        Here are some projects that demonstrate my skills and experience. Each project
-        includes a brief description, along with links to the live demo and source code.
+        Products I designed, built and shipped for real organisations, and that are
+        in use today. Each one includes a short summary and a link to the live product.
       </motion.p>
 
       <div className="mt-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">

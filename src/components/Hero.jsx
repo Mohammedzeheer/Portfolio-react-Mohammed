@@ -45,13 +45,14 @@ const Hero = () => {
             </h1>
 
             <p className={`${styles.heroSubText} mt-3 text-white-100`}>
-              Full Stack Developer crafting fast,
-              <br className="sm:block hidden" /> scalable &amp; user-friendly web apps
+              Senior Full Stack Developer shipping
+              <br className="sm:block hidden" /> production web products end to end
             </p>
 
             <p className="mt-4 max-w-xl text-secondary text-[15px] sm:text-[17px] leading-relaxed">
-              I build end-to-end products with React, Next.js, Node.js, NestJS and
-              MongoDB — from clean interfaces to reliable APIs.
+              Nearly five years of owning products from architecture to launch
+              with React, Next.js, Node.js, NestJS and MongoDB. My platforms have
+              run 30+ fests and handled 1,200+ registrations for a single event.
             </p>
 
             <div className="mt-8 flex flex-col xs:flex-row gap-4">
@@ -110,7 +111,7 @@ const Hero = () => {
           <div className="relative rounded-full p-[4px] bg-gradient-to-tr from-[#915EFF] via-[#c084fc] to-[#00cea8]">
             <img
               src={profile}
-              alt="Mohammed, Full Stack Developer"
+              alt="Mohammed, Senior Full Stack Developer"
               width={520}
               height={520}
               className="w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] lg:w-[320px] lg:h-[320px] xl:w-[380px] xl:h-[380px] rounded-full object-cover bg-white"

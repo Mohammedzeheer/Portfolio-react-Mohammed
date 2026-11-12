@@ -46,15 +46,17 @@ const About = () => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-secondary text-[16px] sm:text-[17px] max-w-4xl leading-[30px]"
             >
-                I&apos;m a full stack developer who loves turning ideas into fast, reliable
-                web products. I work across the stack with{" "}
+                I&apos;m a senior full stack developer with nearly five years of experience
+                taking web products from an idea to production. I work across the stack with{" "}
                 <span className="text-white font-medium">
                     React, Next.js, Node.js, NestJS, MongoDB and PostgreSQL
                 </span>
-                , building everything from event platforms to booking and payment systems.
-                I&apos;m a quick learner who enjoys collaborating closely with clients and teams
-                to ship clean, scalable and user-friendly solutions. Let&apos;s bring your ideas
-                to life!
+                , and I own the whole delivery: data modelling, API design, interfaces,
+                deployment and support after launch. I&apos;ve built event and fest platforms,
+                fee collection systems, and booking and payment products that real
+                organisations run on every day. I work directly with clients and teams,
+                turn loose requirements into a clear plan, and ship software that stays
+                reliable as it grows.
             </motion.p>
 
             <div className="mt-14 grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6">

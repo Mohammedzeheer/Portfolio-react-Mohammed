@@ -1,14 +1,21 @@
 import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+const BASE_SCALE = 2.5;
+const FULL_SIZE_VIEWPORT_WIDTH = 7.5;
+
 const Earth = () => {
   const earth = useGLTF("./planet/scene.gltf");
+  // Shrink the planet when the canvas is narrower than the model, so its
+  // clouds are not cut off at the left and right edges.
+  const viewportWidth = useThree((state) => state.viewport.width);
+  const scale = BASE_SCALE * Math.min(1, viewportWidth / FULL_SIZE_VIEWPORT_WIDTH);
 
   return (
-    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
+    <primitive object={earth.scene} scale={scale} position-y={0} rotation-y={0} />
   );
 };
 

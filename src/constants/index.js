@@ -122,22 +122,22 @@ const services = [
     {
         title: "Frontend Developer",
         icon: web,
-        description: "Pixel-perfect, fast interfaces with React, Next.js and Tailwind CSS.",
+        description: "Fast, accessible interfaces with React, Next.js and Tailwind CSS, built to scale with the product.",
     },
     {
         title: "Backend Developer",
         icon: backend,
-        description: "Secure, scalable REST APIs with Node.js, Express and NestJS.",
+        description: "API and database design with Node.js, NestJS, MongoDB and PostgreSQL, with auth and role-based access.",
     },
     {
         title: "Full Stack Solutions",
         icon: creator,
-        description: "End-to-end products — database, API, dashboard and deployment.",
+        description: "Full ownership from requirements and architecture to deployment and support.",
     },
     {
         title: "Responsive Design",
         icon: mobile,
-        description: "Layouts that look great on every screen, from phone to desktop.",
+        description: "Mobile-first products that work as well on a phone at the venue as on the office desktop.",
     },
 ];
 
@@ -210,13 +210,16 @@ const technologies = [
 
 const experiences = [
      {
-        title: "Full stack Developer",
+        title: "Senior Full Stack Developer",
         company_name: "Codefact",
         icon: codefact,
         iconBg: "#E6DEDD",
-        date: "2025 Jan - present",
+        date: "2024 Nov - present",
         points: [
-            "At CodeFact, I’m working on developing scalable web applications using NextJS, Node.js, React, MongoDB, and JavaScript. I handle both backend API development and frontend features, collaborate with the team to solve technical challenges, and focus on delivering clean, efficient, and user-friendly solutions. I’m currently involved in projects like RentOut.com, including modules such as property listings, bookings, payments, and admin dashboards.",
+            "Government project: developing gaisfishers.in, a national web platform for the fisheries sector, across the frontend, backend APIs and admin modules.",
+            "Built Rntout, a product rental platform, and Techmate, which helps businesses manage their daily operations efficiently.",
+            "Built the core backend microservices, the complete e-commerce website and the admin panel for Gobooze, a multi-store delivery platform.",
+            "Built the core backend services and an admin panel for Mind360, a mental wellness platform.",
         ],
     },
     {
@@ -224,9 +227,10 @@ const experiences = [
         company_name: "Techrender.ai",
         icon: techrender,
         iconBg: "#E6DEDD",
-        date: "2024 Feb - 2025 Jan",
+        date: "2024 Jan - 2024 Nov",
         points: [
-            "As a full stack developer, I utilize NestJS, Node.js, React, PostgreSQL, and JavaScript to craft efficient and dynamic web applications. I collaborate with team members to brainstorm ideas and tackle technical challenges, ensuring high-quality solutions are delivered efficiently.",
+            "Built and shipped web applications across the stack with NestJS, Node.js, React and PostgreSQL.",
+            "Worked with the team on solution design and resolved technical challenges to deliver high-quality releases on schedule.",
         ],
     },
     {
@@ -236,7 +240,7 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "2022 - 2023",
         points: [
-            "As a Mern stack developer, I use Node.js, React, Express, MongoDB, and JavaScript to create efficient and dynamic web apps.",
+            "Built full MERN stack web applications with Node.js, Express, React and MongoDB, from database to deployed product.",
         ],
     },
     {
@@ -246,7 +250,7 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "2021",
         points: [
-            "Developed gold billing application and Collaborated with team members to deliver high-quality solutions",
+            "Developed a gold billing application, working with the team to deliver a reliable production system.",
         ],
     },
 ];
