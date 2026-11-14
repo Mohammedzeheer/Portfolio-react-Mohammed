@@ -320,7 +320,7 @@ const projects = [
         ],
         image: festspace1,
         images: [festspace1, festspace2, festspace3],
-        live_demo_link: "https://festspace1.netlify.app/",
+        live_demo_link: "https://festspaces.netlify.app/",
         source_code_link: "https://github.com/Mohammedzeheer/",
     },
     {
